@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    width: 100%;
     background-color: ${props => props.theme.colors.backgroundColor};
     color: ${props => props.theme.colors.textColor};
   }
