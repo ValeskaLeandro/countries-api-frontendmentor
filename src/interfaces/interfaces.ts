@@ -21,3 +21,15 @@ export interface Country {
     png: string;
   };
 }
+
+export interface IGetPageNumbers {
+  MAX_PAGE_NUMBERS: number
+  totalPages: number,
+  currentPage: number
+}
+
+export interface ISelectRegion {
+  selectedRegion: string,
+  regions: string[],
+  handleRegionChange(region: string): void
+}

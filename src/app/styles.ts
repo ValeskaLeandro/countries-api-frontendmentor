@@ -1,18 +1,9 @@
 import styled from "styled-components";
+
 export const Main = styled.main`
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`
-
-export const GridCountries = styled.div`
-  width: 90%;
-  max-width: 1440px;
-  display: flex;
-  gap: 4rem 5rem;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 `
@@ -25,7 +16,6 @@ export const HeaderContainer = styled.header`
   display: flex;
   justify-content: center;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-  margin-bottom: 3rem;
 `
 
 export const HeaderContent = styled.div`
