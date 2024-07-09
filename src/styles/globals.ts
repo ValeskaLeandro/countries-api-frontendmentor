@@ -16,4 +16,9 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${props => props.theme.colors.backgroundColor};
     color: ${props => props.theme.colors.textColor};
   }
+
+  a {
+    text-decoration: none;
+    color: ${props => props.theme.colors.textColor};
+  }
 `

@@ -11,7 +11,7 @@ const Card = ({ country }: ICard) => {
       <Image src={country.flags.png} width={300} height={200} alt={`Flag ${country.name}`}/>
       <InfoCard>
         <h1>{country.name}</h1>
-        <p><span>Population: </span> {country.population}</p>
+        <p><span>Population: </span> {country.population.toLocaleString("en-us")}</p>
         <p><span>Region: </span> {country.region}</p>
         <p><span>Capital: </span> {country.capital}</p>
       </InfoCard>
