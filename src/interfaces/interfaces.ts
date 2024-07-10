@@ -33,3 +33,14 @@ export interface ISelectRegion {
   regions: string[],
   handleRegionChange(region: string): void
 }
+
+export interface ISearchInput {
+  searchTerm: string
+  handleSearchChange(event: React.ChangeEvent<HTMLInputElement>): void
+}
+
+export interface IPaginatedCountries {
+  countries: Country[]
+  currentPage: number, 
+  handlePageChange(pageNumber: number):void
+}

@@ -1,17 +1,16 @@
-// styles.tsx
-
 import styled from 'styled-components';
 
 export const SelectContainer = styled.div`
   position: relative;
   width: 200px;
-`;
+  `;
 
 export const SelectHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
   background-color: ${props => props.theme.colors.elementsColor};
   border-radius: 10px;
   cursor: pointer;

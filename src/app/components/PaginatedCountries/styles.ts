@@ -1,15 +1,7 @@
 import styled from "styled-components";
 
-export const TopContainer = styled.div`
-  width: 90%;
-  max-width: 1440px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 0
-`
 export const GridCountries = styled.div`
-  width: 90%;
+  width: 100%;
   max-width: 1440px;
   display: flex;
   gap: 4rem 5rem;
@@ -23,7 +15,7 @@ export const PagesContainer = styled.div`
   display: flex;
   gap: .3rem;
 
-  button{
+  button {
     padding: 1rem;
     background-color: ${props => props.theme.colors.elementsColor};
     border: none;
