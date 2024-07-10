@@ -40,7 +40,8 @@ export const ButtonTheme =  styled.button`
 `
 
 export const Main = styled.main`
-  width: 100%;
+  width: 90%;
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   align-items: center;

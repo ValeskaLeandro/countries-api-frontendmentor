@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const CountryPageContainer = styled.div`
-  width: 85%;
-  max-width: 1440px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding-bottom: 5rem;

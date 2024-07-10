@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const GridCountries = styled.div`
   width: 100%;
-  max-width: 1440px;
   display: flex;
-  gap: 4rem 5rem;
+  gap: 4rem 2rem;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;

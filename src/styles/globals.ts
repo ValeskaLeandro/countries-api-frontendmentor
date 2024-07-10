@@ -13,6 +13,10 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background-color: ${props => props.theme.colors.backgroundColor};
     color: ${props => props.theme.colors.textColor};
   }

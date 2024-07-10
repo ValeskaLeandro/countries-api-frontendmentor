@@ -10,7 +10,7 @@ import { PiMoonBold, PiMoonFill } from "react-icons/pi";
 import { ButtonTheme, HeaderContainer, HeaderContent, Main } from './styles';
 
 export default function ThemeProviderWrapper({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<DefaultTheme>(DarkTheme);
+  const [theme, setTheme] = useState<DefaultTheme>(LightTheme);
 
   const toggleTheme = () => {
     setTheme(theme === LightTheme ? DarkTheme : LightTheme);

@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const TopContainer = styled.div`
-  width: 90%;
-  max-width: 1440px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
