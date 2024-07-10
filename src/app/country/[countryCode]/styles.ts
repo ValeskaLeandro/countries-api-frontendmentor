@@ -38,6 +38,8 @@ export const CountryPageContent = styled.div`
 export const ImageContainer = styled.div`
   flex: 1;
   display: flex;
+  width: 100%;
+  height: 100%;
   max-width: 600px;
   max-height: 400px;
   
@@ -46,8 +48,8 @@ export const ImageContainer = styled.div`
     height: 100%;
   }
   @media (max-width: 1100px){
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    max-height: 100%;
   }
 `;
 
