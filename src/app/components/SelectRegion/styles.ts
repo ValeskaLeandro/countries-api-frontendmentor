@@ -12,7 +12,7 @@ export const SelectHeader = styled.div`
   padding: 1rem 1.5rem;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
   background-color: ${props => props.theme.colors.elementsColor};
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
   margin-bottom: .3rem;
 `;
@@ -25,7 +25,7 @@ export const SelectList = styled.ul`
   padding: 0;
   margin: 0;
   list-style-type: none;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: ${props => props.theme.colors.elementsColor};
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1;

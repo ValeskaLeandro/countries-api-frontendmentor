@@ -24,6 +24,12 @@ export const HeaderContent = styled.div`
   display: flex;
   align-items: center;  
   justify-content: space-between;
+
+  h1 {
+    @media (max-width: 780px) {
+      font-size: 16px;
+    }
+  }
 `
 export const TopContainer = styled.div`
   width: 90%;
@@ -49,4 +55,8 @@ export const ButtonTheme =  styled.button`
   gap: .3rem;
   font-size: 16px;
   cursor: pointer;
+
+  @media (max-width: 780px) {
+    font-size: 14px;
+  }
 `

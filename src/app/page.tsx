@@ -46,6 +46,7 @@ export default function Home() {
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
     setSearchTerm(value);
+    setCurrentPage(1);
 
     const filtered = countries.filter(country =>
       country.name.toLowerCase().includes(value.toLowerCase())

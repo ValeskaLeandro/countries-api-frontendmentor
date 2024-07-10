@@ -6,7 +6,7 @@ export const InputContainer = styled.div`
   padding: 1rem 1.5rem;
   width: 100%;
   max-width: 450px;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   gap: 1.5rem;

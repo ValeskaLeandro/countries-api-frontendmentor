@@ -1,17 +1,17 @@
 import styled from "styled-components"
 
 export const MainCard = styled.div`
-  width: 300px;
+  width: 280px;
   height: 380px;
   background-color: ${props => props.theme.colors.elementsColor};
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
   transition: .5s;
 
   img {
-    width: 300px;
-    height: 200px;
+    width: 280px;
+    height: 190px;
   }
 
   &:hover {
