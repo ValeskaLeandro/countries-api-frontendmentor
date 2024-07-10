@@ -3,7 +3,7 @@ import { GlobalStyle } from "@/styles/globals";
 import { DarkTheme } from "@/styles/themes/dark";
 import { useEffect, useState } from "react";
 import { DefaultTheme, ThemeProvider } from "styled-components";
-import {  Main, TopContainer } from "./styles";
+import { TopContainer } from "./styles";
 import PaginatedCountries from "./components/PaginatedCountries/PaginatedCountries";
 import SearchInput from "./components/SearchInput/SearchInput";
 import SelectRegion from "./components/SelectRegion/SelectRegion";
@@ -49,14 +49,12 @@ export default function Home() {
   };
   return (
     <>
-      <GlobalStyle />
-      <Main>        
+      <GlobalStyle />        
         <TopContainer>
           <SearchInput handleSearchChange={handleSearchChange} searchTerm={searchTerm}/>
           <SelectRegion selectedRegion={selectedRegion} handleRegionChange={handleRegionChange} regions={regions} />
         </TopContainer>
         <PaginatedCountries countries={filteredCountries} currentPage={currentPage} handlePageChange={handlePageChange}/>
-      </Main>
     </>
     
   );

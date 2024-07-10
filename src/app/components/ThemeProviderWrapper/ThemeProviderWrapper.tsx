@@ -7,7 +7,7 @@ import { DarkTheme } from "@/styles/themes/dark";
 import { LightTheme } from "@/styles/themes/light";
 import { DefaultTheme } from 'styled-components';
 import { PiMoonBold, PiMoonFill } from "react-icons/pi";
-import { ButtonTheme, HeaderContainer, HeaderContent } from './styles';
+import { ButtonTheme, HeaderContainer, HeaderContent, Main } from './styles';
 
 export default function ThemeProviderWrapper({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<DefaultTheme>(DarkTheme);
@@ -28,7 +28,10 @@ export default function ThemeProviderWrapper({ children }: { children: React.Rea
           </ButtonTheme>
         </HeaderContent>
       </HeaderContainer>
-      {children}
+      
+      <Main>
+        {children}
+      </Main>
     </ThemeProvider>
   );
 }

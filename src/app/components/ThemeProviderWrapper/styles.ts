@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-
-
 export const HeaderContainer = styled.header`
   width: 100%;
   height: 90px;
@@ -39,4 +37,12 @@ export const ButtonTheme =  styled.button`
   @media (max-width: 780px) {
     font-size: 14px;
   }
+`
+
+export const Main = styled.main`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `
