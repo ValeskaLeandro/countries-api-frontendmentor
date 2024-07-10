@@ -1,6 +1,7 @@
 import StyledComponentsRegistry from "@/lib/registry";
 import type { Metadata } from "next";
 import { Nunito_Sans } from 'next/font/google';
+import ThemeProviderWrapper from "./components/ThemeProviderWrapper/ThemeProviderWrapper";
 
 const nunito_sans = Nunito_Sans({ subsets: ["latin"], display: 'swap',});
 
@@ -17,7 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={nunito_sans.className}>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry></body>
+        <StyledComponentsRegistry>
+          <ThemeProviderWrapper>
+            {children}
+          </ThemeProviderWrapper>
+        </StyledComponentsRegistry></body>
     </html>
   );
 }

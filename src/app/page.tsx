@@ -3,9 +3,7 @@ import { GlobalStyle } from "@/styles/globals";
 import { DarkTheme } from "@/styles/themes/dark";
 import { useEffect, useState } from "react";
 import { DefaultTheme, ThemeProvider } from "styled-components";
-import { ButtonTheme, HeaderContainer, HeaderContent, Main, TopContainer } from "./styles";
-import { LightTheme } from "@/styles/themes/light";
-import { PiMoonBold, PiMoonFill } from "react-icons/pi";
+import {  Main, TopContainer } from "./styles";
 import PaginatedCountries from "./components/PaginatedCountries/PaginatedCountries";
 import SearchInput from "./components/SearchInput/SearchInput";
 import SelectRegion from "./components/SelectRegion/SelectRegion";
@@ -15,7 +13,6 @@ import CountriesData from '@/data/data.json'
 export default function Home() {
   const [theme, setTheme] = useState<DefaultTheme>(DarkTheme)
   const [selectedRegion, setSelectedRegion] = useState<string>('');
-  const [selectedCountry, setSelectedCountry] = useState<Country | null>(null);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [searchTerm, setSearchTerm] = useState<string>('');
   const [filteredCountries, setFilteredCountries] = useState<Country[]>([]);
@@ -34,10 +31,6 @@ export default function Home() {
       : countries.filter(country => country.region === selectedRegion))
   }, [countries, selectedRegion])
 
-  const toggleTheme = (theme: DefaultTheme) => {
-    setTheme(theme === LightTheme ? DarkTheme : LightTheme);
-  }
-
   const handleRegionChange = (region: string) => {
     setSelectedRegion(region);
     setCurrentPage(1);
@@ -55,17 +48,8 @@ export default function Home() {
     setFilteredCountries(filtered);
   };
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <GlobalStyle />
-      <HeaderContainer>
-        <HeaderContent>
-          <h1>Where in the world?</h1>
-          <ButtonTheme onClick={() => toggleTheme(theme)}>
-            {theme === LightTheme ? (<PiMoonBold />) : (<PiMoonFill />)} 
-            Dark Mode
-          </ButtonTheme>
-        </HeaderContent>
-      </HeaderContainer>
       <Main>        
         <TopContainer>
           <SearchInput handleSearchChange={handleSearchChange} searchTerm={searchTerm}/>
@@ -73,7 +57,7 @@ export default function Home() {
         </TopContainer>
         <PaginatedCountries countries={filteredCountries} currentPage={currentPage} handlePageChange={handlePageChange}/>
       </Main>
-    </ThemeProvider>
+    </>
     
   );
 }

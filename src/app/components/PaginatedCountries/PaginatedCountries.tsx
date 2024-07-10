@@ -22,7 +22,7 @@ const PaginatedCountries = ({ countries, currentPage, handlePageChange }: IPagin
     <>     
       <GridCountries>
           {currentCountries.map((country) => (
-            <Link href={`/${country.numericCode}`} key={country.numericCode}>
+            <Link href={`/country/${country.numericCode}`} key={country.numericCode}>
               <Card country={country}/>
             </Link>
           ))}      
