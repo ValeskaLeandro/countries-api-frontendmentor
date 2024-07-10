@@ -8,7 +8,7 @@ interface ICard {
 const Card = ({ country }: ICard) => {
   return(
     <MainCard>
-      <Image src={country.flags.svg} width={300} height={200} alt={`Flag ${country.name}`}/>
+      <Image src={country.flags.png} width={300} height={200} alt={`Flag ${country.name}`}/>
       <InfoCard>
         <h1>{country.name}</h1>
         <p><span>Population: </span> {country.population.toLocaleString("en-us")}</p>
